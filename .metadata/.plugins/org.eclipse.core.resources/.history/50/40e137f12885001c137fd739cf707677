@@ -1,0 +1,30 @@
+package com.loiane.estruturadados.vetor;
+
+public class Vetor {
+	
+	private String[] elementos; 
+	private int tamanho;
+	
+	public Vetor(int capacidade) {
+		this.elementos = new String[capacidade];
+		this.tamanho = 0;
+	}
+	
+	//adicionamento valores no vetor
+	
+	/*public void adiciona(String elemento) {
+		for (int i = 0; i<elementos.length; i++) {
+			if (this.elementos[i] == null) {
+				this.elementos[i] = elemento;
+				break;
+			}
+		}
+	}*/
+
+	//identificando qual a última posição utilizada no vetor
+	
+	public void adiciona(String elemento) {
+		this.elementos[this.tamanho] = elemento;
+		this.tamanho++;
+	}
+}

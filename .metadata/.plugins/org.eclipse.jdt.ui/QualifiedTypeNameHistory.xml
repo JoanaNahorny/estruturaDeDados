@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.vetor.Vetor"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.vetor.VetorObjetos"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.vetor.Lista"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.vetor.teste.Contato"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.pilha.Pilha"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.base.EstruturaEstatica"/>
+    <fullyQualifiedTypeName name="com.loiane.estruturadados.fila.Fila"/>
+</qualifiedTypeNameHistroy>

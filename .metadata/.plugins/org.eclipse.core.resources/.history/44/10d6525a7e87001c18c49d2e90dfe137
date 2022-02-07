@@ -1,0 +1,99 @@
+package com.loiane.estruturadados.vetor.labs;
+
+import java.util.Scanner;
+
+import com.loiane.estruturadados.vetor.Lista;
+import com.loiane.estruturadados.vetor.teste.Contato;
+
+public class Exer06 {
+
+	public static void main(String[] args) {
+
+		//criacao e declaracao das variaveis
+		Scanner scan = new Scanner(System.in);
+		
+		//criacao do vetor com 20 capacidade
+		Lista<Contato> lista = new Lista<Contato>(20);
+		
+		//criacao e adicao de contatos
+		//criarContatosDinamicamente(5, lista);
+		
+		//criacao do menu para o usuario
+		int opcao = 1;
+		
+		while (opcao != 0) {
+			
+			opcao = obterOpcaoMenu(scan);
+			
+			switch (key) {
+			case value:
+				
+				break;
+
+			default:
+				break;
+			}
+
+		}
+	}
+	
+	
+	private static int obterOpcaoMenu(Scanner scan) {
+		
+		boolean entradaValida = false;
+		int opcao = 0;
+		String entrada;
+		
+		while (!entradaValida){
+			System.out.println("Digite a opção desejada:");
+			System.out.println("Opçao 1: Add contato no final do vetor");
+			System.out.println("Opçao 2: Add contato em uma aposição específica");
+			System.out.println("Opçao 3: Obtém contato de uma posição específica ");
+			System.out.println("Opçao 4: Consulta contato");
+			System.out.println("Opçao 5: Consulta o último índice");
+			System.out.println("Opçao 6: Verifica se o contato já existe");
+			System.out.println("Opçao 7: Add contato");
+			System.out.println("Opçao 8: Excluir contato");
+			System.out.println("Opçao 9: Verificar tamanho do vetor");
+			System.out.println("Opçao 10: Excluir todos os contatos do vetor");
+			System.out.println("Opçao 11: Imprime vetor");
+			System.out.println("0: sair");
+			
+			try {
+				
+				entrada = scan.nextLine();
+				opcao = Integer.parseInt(entrada);
+				
+				if (opcao >= 0 && opcao <= 11) {
+					entradaValida = true;
+				} else {
+					throw new Exception();
+				}
+				
+			} catch (Exception e) {
+				System.out.println("Entrada inválida. Digite novamente.\n\n\n");
+			}
+			
+			
+		}
+				
+		return opcao;
+	}
+	
+	private static void criarContatosDinamicamente(int quantidade, Lista<Contato> lista) {
+		
+		Contato contato; 
+		
+		for (int i=1; i<=quantidade; i++) {
+			
+			contato = new Contato ();
+			contato.setNome("Contato " + i);
+			contato.setTelefone("1111" + i);
+			contato.setEmail("contato" + i + "@email.com");
+			
+			lista.adiciona(contato);
+		}
+		
+	}
+
+}

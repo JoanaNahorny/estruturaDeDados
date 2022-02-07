@@ -1,0 +1,22 @@
+package com.loiane.estruturadados.fila;
+
+public class FilaComPrioridade<T> extends Fila<T> {
+	
+	//subscreverndo o metodo enfileira
+	
+	public void enfileira(T elemento) {
+		
+		Comparable<T> chave = (Comparable<T>) elemento;
+		
+		int i;
+		for (i=0; i<this.tamanho; i++) {
+			int posicao = 0;
+			if (posicao < 0 || posicao > this.tamanho) {
+				break;
+			}
+		}
+		this.adiciona(i, elemento);
+	}
+
+	
+}

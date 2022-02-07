@@ -1,0 +1,72 @@
+package com.loiane.estruturadados.pilha.labs;
+
+import java.util.Scanner;
+
+import com.loiane.estruturadados.pilha.Pilha;
+
+public class Exer02 {
+
+	public static void main(String[] args) {
+
+		Pilha<Integer> par = new Pilha<Integer>();
+		Pilha<Integer> impar = new Pilha<Integer>();
+
+		Scanner scan = new Scanner(System.in);
+
+		for (int i=1; i<=10; i++){
+			
+			System.out.println("Entre com um número: ");
+
+			int num = scan.nextInt();
+
+			if (num == 0) {
+				
+				//pilha de números pares
+				
+				Integer desempilhado = par.desempilha();
+				
+				if (desempilhado == null) {
+					System.out.println("A pilha está vazia");
+				} else {
+					System.out.println("Desempilhando 0 da pilha par");
+				
+				}
+					
+				// pilha de números ímpares
+				
+				desempilhado = impar.desempilha();
+				
+				if (desempilhado == null) {
+					System.out.println("A pilha está vazia");
+				} else {
+					System.out.println("Desempilhando 0 da pilha par");
+				
+				}
+				
+			} else if (num %2 == 0) {
+				System.out.println("Número par empilhando na pilha par");
+
+				par.empilha(num);
+				
+			} else {
+				System.out.println("Número ímpar empilhando na pilha ímpar");
+
+				impar.empilha(num);
+			}
+		}
+		
+		System.out.println("Desempilhando todos os números da pilha ÍMPAR");
+		
+		while (!impar.estaVazia()) {
+			
+			System.out.println("Desempilhando a pilha ímpar "  + impar.desempilha()); 
+		}
+		
+		System.out.println("Desempilhando todos os números da pilha PAR");
+		while (!par.estaVazia()) {
+			System.out.println("Desempilhando a pilha par " + par.desempilha()); 
+		}
+		
+	}
+
+}

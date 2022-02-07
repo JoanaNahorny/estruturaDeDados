@@ -30,7 +30,7 @@ public class Paciente {//implements Comparable<Paciente>{
 	}
 
 	//metodologia de comparacao
-	*@Override
+	/*@Override
 	public int compareTo(Paciente o) {
 		// obj 1 > obj 2 return > 0 (1)
 		// obj 1 < obj 2 return < 0 (-1)
@@ -42,7 +42,7 @@ public class Paciente {//implements Comparable<Paciente>{
 		}
 		
 		return 0;
-	}
+	}*/
 	
 
 }
